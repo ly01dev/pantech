@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// biến
+$boder-color: rgb(194, 36, 36);
+$font: "Poppins", serif;
+
+@mixin boder-mix($radius){
+    border: 1px solid $boder-color;
+    border-radius: $radius;
+
+}
+body{
+    height: 100vh;
+    font-family: $font;
+    background-color: rgb(70, 211, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        width: 300px;
+        height: 400px;
+        background-color: rgb(27, 13, 13);
+        border-radius: 10px;
+        .card-img{
+            height: 120px;
+            width: 120px;
+            margin: 15px auto;
+            @include boder-mix(50%);
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                @include boder-mix(50%);
+            }
+        }
+        h2{
+            color: white;
+            text-align: center;
+        }
+        p{
+            color: $boder-color;
+            text-align: center;
+            margin: 10px;
+        }
+        .social{
+            text-align: center;
+            a{
+                margin: 10px 10px;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+            height: 40px;
+            @include boder-mix(10px);
+            color: aliceblue;
+            background-color: black;
+            &:hover{
+                background: yellow;
+                color: red;
+            }
+        }
+    }
+
+    
+}

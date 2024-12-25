@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", serif;
+  background-color: rgb(70, 211, 70);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .card {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(27, 13, 13);
+  border-radius: 10px;
+}
+body .card .card-img {
+  height: 120px;
+  width: 120px;
+  margin: 15px auto;
+  border: 1px solid rgb(194, 36, 36);
+  border-radius: 50%;
+  overflow: hidden;
+}
+body .card .card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgb(194, 36, 36);
+  border-radius: 50%;
+}
+body .card h2 {
+  color: white;
+  text-align: center;
+}
+body .card p {
+  color: rgb(194, 36, 36);
+  text-align: center;
+  margin: 10px;
+}
+body .card .social {
+  text-align: center;
+}
+body .card .social a {
+  margin: 10px 10px;
+}
+body .card .social a:hover {
+  color: white;
+}
+body .card button {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 40px;
+  border: 1px solid rgb(194, 36, 36);
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: black;
+}
+body .card button:hover {
+  background: yellow;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
